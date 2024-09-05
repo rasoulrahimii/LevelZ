@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'write_model_external_builder_methods' => true,
+    'write_model_external_builder_methods' => false,
 
     /*
     |--------------------------------------------------------------------------
