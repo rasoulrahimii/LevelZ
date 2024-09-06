@@ -1,0 +1,979 @@
+{
+	"info": {
+		"_postman_id": "cf05fb6c-3697-4d2b-8a4a-0b5377a2ff4a",
+		"name": "Level Z Assignment",
+		"description": "A Postman collection for the API endpoints of the Level Z assignment project, by Rasoul Rahimi.\n\nSee the original project here: https://github.com/rasoulrahimii/LevelZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2553503",
+		"_collection_link": "https://www.postman.com/gsdktour/workspace/snappfood-task/collection/2553503-cf05fb6c-3697-4d2b-8a4a-0b5377a2ff4a?action=share&source=collection_link&creator=2553503"
+	},
+	"item": [
+		{
+			"name": "Register Mobile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "7678972765",
+							"type": "text"
+						},
+						{
+							"key": "country_code",
+							"value": "+1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/register/mobile?XDEBUG_TRIGGER",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"register",
+						"mobile"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_TRIGGER",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "9392798713",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+98",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/mobile?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"mobile"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Sep 2024 22:43:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Your request has been fulfilled successfully.\",\n    \"exists\": false,\n    \"mobile_verified\": false,\n    \"mobile_verification_code\": 491351\n}"
+				},
+				{
+					"name": "Throttling Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "9392798713",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+98",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/mobile?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"mobile"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Sep 2024 22:44:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"At least 2 minutes must pass since your last successful request.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register Verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "7678972765",
+							"type": "text"
+						},
+						{
+							"key": "country_code",
+							"value": "+1",
+							"type": "text"
+						},
+						{
+							"key": "verification_code",
+							"value": "323216",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/register/verify?XDEBUG_TRIGGER",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"register",
+						"verify"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_TRIGGER",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "7678972765",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+1",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "323216",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/verify?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 01:09:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"user\": []\n    },\n    \"registration_token\": \"Vep3lev00Ft1qtKmAzeEIQECihroU7SSzX6rKAV1he89LME5WqRZU6QCyIDH\"\n}"
+				},
+				{
+					"name": "Invalid Verification Code",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "7678972765",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+1",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "323216",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/verify?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 01:08:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid verification code\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register On Device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "registration_token",
+							"value": "Vep3lev00Ft1qtKmAzeEIQECihroU7SSzX6rKAV1he89LME5WqRZU6QCyIDH",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/register/device?XDEBUG_TRIGGER",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"register",
+						"device"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_TRIGGER",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "registration_token",
+									"value": "Vep3lev00Ft1qtKmAzeEIQECihroU7SSzX6rKAV1he89LME5WqRZU6QCyIDH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/device?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"device"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 01:10:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"user\": {\n            \"name\": \"John Doe\",\n            \"email\": \"test@gmail.com\",\n            \"mobile\": \"+17678972765\",\n            \"token\": \"MXBmH8hTpWMY6J0PGkJ479MyleF0iqrfWydtQgLNUh59tvODXCr6ngy1beN8\",\n            \"mobile_verified\": true,\n            \"email_verified\": false\n        }\n    },\n    \"message\": \"You have successfully registered.\"\n}"
+				},
+				{
+					"name": "Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rasoul Rahimi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rasoulrahimi93@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "registration_token",
+									"value": "t9PPT6wBdYstcRhf4BMoEV6motbKMtF3EtMVjtmxDYKBm8iu8qlDFPpXedDb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/register/device?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"register",
+								"device"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 00:53:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You have not started the registration process yet.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Set Pin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "MXBmH8hTpWMY6J0PGkJ479MyleF0iqrfWydtQgLNUh59tvODXCr6ngy1beN8",
+							"type": "text"
+						},
+						{
+							"key": "pin",
+							"value": "938106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/set-pin?XDEBUG_TRIGGER",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"set-pin"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_TRIGGER",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "MXBmH8hTpWMY6J0PGkJ479MyleF0iqrfWydtQgLNUh59tvODXCr6ngy1beN8",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "938106",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/set-pin?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"set-pin"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 01:10:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"user\": {\n            \"name\": \"John Doe\",\n            \"email\": \"test@gmail.com\",\n            \"mobile\": \"+17678972765\",\n            \"token\": \"MXBmH8hTpWMY6J0PGkJ479MyleF0iqrfWydtQgLNUh59tvODXCr6ngy1beN8\",\n            \"mobile_verified\": true,\n            \"email_verified\": false\n        }\n    },\n    \"message\": \"You have successfully set your PIN.\"\n}"
+				},
+				{
+					"name": "Invalid Registration Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "MXBmH8hTpWMY6J0PGkJ479MyleF0iqrfWydtQgLNUh59tvODXCr6ngy1beN8a",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "938106",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/users/set-pin?XDEBUG_TRIGGER",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								"set-pin"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_TRIGGER",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Sep 2024 01:11:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid registration token\"\n}"
+				}
+			]
+		}
+	]
+}
