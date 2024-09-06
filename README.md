@@ -39,7 +39,7 @@ Some changes, such as not returning an encrypted (or hashed) PIN, were made beca
 
 **Why did you choose to place the logic in the controller instead of distributing it across other layers in the application? (e.g. action classes, service layers, repository layers, etc.)**
 
-Given the simplicity and minimal nature of the application’s requirements, adding extra layers might have been unnecessary and could lead to over-engineering. Additionally, using short invokable controllers without introducing unnecessary abstractions, along with API Resources and Form Requests to separate concerns, streamlines the code further and makes it more concise. This approach ensures that we meet the project’s needs efficiently.
+Given the simplicity and minimal nature of the application’s requirements, adding extra layers might have been unnecessary and could lead to over-engineering. Additionally, using short invokable controllers without introducing unnecessary abstractions, along with [API Resources](https://laravel.com/docs/11.x/eloquent-resources) and [Form Requests](https://laravel.com/docs/11.x/validation#form-request-validation) to separate some concerns, streamlines the code further and makes it more concise. This approach ensures that we meet the project’s needs efficiently.
 
 **Usage of Direct Insertion of Factories Instead of Model::factory:**
 
